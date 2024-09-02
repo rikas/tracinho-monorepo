@@ -1,0 +1,10 @@
+query getClarification($word: String!) {
+  clarification(word: $word) {
+    id
+    visits
+
+    words {
+      ...BasicWord
+    }
+  }
+}

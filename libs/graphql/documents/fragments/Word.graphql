@@ -1,0 +1,11 @@
+fragment BasicWord on Word {
+  id
+  text
+  exists
+  classification
+  banned
+}
+
+fragment CompleteWord on Word {
+  ...BasicWord
+}

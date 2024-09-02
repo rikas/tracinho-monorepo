@@ -1,0 +1,14 @@
+query getApprovedSiteExamples($wordId: ID!) {
+  siteExamples(wordId: $wordId, status: APPROVED) {
+    nodes {
+      id
+      createdAt
+      text
+      directLink
+      site {
+        id
+        name
+      }
+    }
+  }
+}
